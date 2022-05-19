@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stays.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>ProyectoX</title>
+</head>
+
+<body>
+    <!------------------------------------Video de fondo de la pagina ------------------------------------------->
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!------------------------------------ENCABEZADO------------------------------------------->
+
+    <nav class="navbar navbar-light bg-light fixed-top position-absolute ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="text-primary fs-5 fw-bold"> FLOREX.COL</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-------------------------------------- THIS ---------------------------------------------------------->
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./IMG/IMG inicio.jpg" class="d-block w-100" alt="Imagen">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./IMG/IMG inicio2.jpg" class="d-block w-100" alt="Imagen2">
+            </div>
+
+            <div class="carousel-item " data-bs-interval="3000">
+                <img src="./IMG/IMG intro.jpg" class="d-block w-100" alt="Imagen3">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- --------------------Flexbox container for aligning the toasts ---------------------------------------------->
+    <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100">
+
+        <!-------------------------- Then put toasts within -------------------------------------------------->
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------- fomulario de contactanos  -------------------------------------------------->
+    <div class="m-0 vh-80 row justify-content-center align-items-center">
+        <div class="col-auto">
+
+            <form>
+                <div class="mb-3">
+
+                    <label class="form-label">dijite sus nombre </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1">
+
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"> digite sus apellido </label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                </div>
+
+                <center><button onclick="datosclientes()" class="btn btn-primary">Submit</button></center>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <!-------------------------- intro de la pagina  -------------------------------------------------->
+    <section class="w-50 mx-auto text-center pt-5" id="intro">
+        <h1 class=" p-3 fs-2 border-stop border-3"> Somos una floristeria con flores locales e
+            <span class="text-primary">internacioanes </span></h1>
+        <p class="p-3 fs-5"><span class="text-primary">FLOREX.COL </span>es tu tienda de flores preferida </p>
+    </section>
+
+    <!------productos IMG-->
+    <div class="clearfix">
+
+        <video class="col-md-5 float-md-end mb-4 ms-md-4" controls autoplay loop> <source src="./Videos/video girazoles.mp4"  type="video/mp4"></video>
+
+        <p>
+            FLOREX.COL, Floristería y artículos decorativos, es una empresa consolidada en Barranquilla hace más de 10 años, que concentró sus esfuerzos en atender las necesidades de los habitantes y del mundo empresarial en materia de floristería y decoración de
+            una ciudad que asumió el concepto de combinar estilos, ambientes armónicos, y conceptos estéticos e innovadores con cada una de las actividades que conforman el entorno laboral, personal y familiar como un aspecto muy importante.
+        </p>
+
+        <p>
+            De este modo, Flor de Liz se ha preocupado por perfeccionar día a día su labor y servicios para estar a la vanguardia de una sociedad exigente, contando con un personal capacitado y reconocido por su gran trayectoria y experiencia en materia de decoración
+            y asesoría.
+        </p>
+
+        <p>
+            Estos nuevos conceptos han fomentado una visión de negocio más amplia expandiendo la promoción de sus productos pese a la demanda que genera este servicio, abriendo nuevas líneas y desarrollo de nuevos productos.
+        </p>
+    </div>
+    <div class="container">
+        <!------productos y link de productos -->
+        <div class="row">
+            <div class="col order-last">
+                <img src="./IMG/IMG inicio2.jpg" class="figure-img img-fluid rounded" alt="imagen3">
+                <center><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3">
+                    Decor
+                  </button></center>
+
+
+            </div>
+
+            <div class="col">
+
+
+                <img src="./IMG/decoracion 1.jpg" class="figure-img img-fluid rounded" alt="imagen3">
+
+                </center>
+                <center><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal2"> Decor  </button></center>
+                <center>
+                    <h5>Decoraciones en espacio </h5>
+                </center>
+
+
+            </div>
+            <div class="col order-first">
+
+
+                <!-- The Modal -->
+
+                <!-- Modal 1 -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Nustros productos incignias</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+
+                            <ul>
+
+                                <div class="modal-body" id="Modal1">
+                                    <center><img src="./IMG/imagen de flor.jpg" alt="imagen de flor "></center>
+                                    <br> rosas : Las hojas de las rosas son alternas, ásperas, pecioladas, compuestas de un número impar de foliolos elípticos, con forma de sierra en los márgenes. Las flores son terminales, solitarias o en racimo, con
+                                    el cáliz aovado o redondo
+
+                                </div>
+
+
+
+                            </ul>
+
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 2 -->
+                <div class="modal" id="myModal2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Modal 2</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+
+                            <ul>
+
+                                <div class="modal-body">
+                                    <center><img src="./IMG/imagen de flor.jpg" alt="Imagen Carro "></center>
+                                    <br> Este es el modal 2
+
+                                </div>
+
+
+
+                            </ul>
+
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 3 -->
+                <div class="modal" id="myModal3">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Modal 3</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+
+                            <ul>
+
+                                <div class="modal-body">
+                                    <center><img src="./IMG/imagen de flor.jpg" alt="Imagen Carro "></center>
+                                    <br> Este es el modal 3
+                                </div>
+
+
+
+                            </ul>
+
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <img src="./IMG/Foto clientes.jpg" class="figure-img img-fluid rounded" alt="imagen3">
+                <center><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                  Open
+                </button></center>
+
+
+                <center>
+                    <h5>Nustros productos incignias</h5>
+                </center>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <footer class="d-flex justify-content-center" style="background-color:rgba(0, 0, 0, 0.021); color:rgb(27, 2, 2);">Copyright &copy; By: Johan, Alberto, Josué</footer>
+
+    <script src="./fuciones.js"></script>
+</body>
+
+</html>
